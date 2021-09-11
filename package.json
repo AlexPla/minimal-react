@@ -10,14 +10,17 @@
     "build": "lerna run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o ./dist",
+    "deploy": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@storybook/addon-actions": "^6.3.8",
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.3.8",
-    "@storybook/react": "^3.4.12",
+    "@storybook/addons": "^6.3.8",
+    "@storybook/react": "^6.3.8",
+    "@storybook/storybook-deployer": "^2.8.10",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "eslint": "^7.32.0",
@@ -26,7 +29,7 @@
     "eslint-plugin-react": "^7.25.1",
     "lerna": "^4.0.0",
     "prettier": "^2.4.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
